@@ -26,9 +26,12 @@ Calls these in order
 
 ## Setup zsh
 1) Sets the default shell to zsh
-2) Copies [.zshrc](.zshrc) to ~/.zshrc.
+2) Install [Oh-My-ZSH](https://ohmyz.sh)
+3) Installs [zsh-completions](https://github.com/zsh-users/zsh-autosuggestions)
+4) Copies [.zshrc](.zshrc) to ~/.zshrc.
    * Prompts if file already exists, and will save existing one to a new location if one chooses to continue.
-3) Runs `source ~/.zshrc` to activate the new config
+5) Runs `source ~/.zshrc` to activate the new config
+6) Installs [iTerm Shell Integrations](https://iterm2.com/documentation-shell-integration.html)
 
 ## Setup Ruby
 1) Installs the version of Ruby specified in [.ruby-version](.ruby-version) so it is available system wide.

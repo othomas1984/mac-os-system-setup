@@ -5,10 +5,10 @@
         "revision": "5628f2152de4896e0994fe0c3c1d0d7350ddf1ff"
       },
       "homebrew/cask": {
-        "revision": "fc0a7b2d476f957ddd5d5b762c1db5edd45eb9f2"
+        "revision": "fa8594296259fabe6d1ff3ac6a0fbaece8b2e249"
       },
       "homebrew/core": {
-        "revision": "e41b337f3ed47a70bc257bda51ed2f11469a7dcc"
+        "revision": "d914aab917710e94170526641d16414cb6a2083e"
       },
       "homebrew/services": {
         "revision": "492fa4ecaffcd735fea8aad6655ccf10228e6c0f"
@@ -106,6 +106,31 @@
             "yosemite": {
               "url": "https://homebrew.bintray.com/bottles/pngcrush-1.8.13.yosemite.bottle.tar.gz",
               "sha256": "5505ea179a71996eb4fab04feebd09ebbef7e8ea4c1efba1e0184333c1883d1b"
+            }
+          }
+        }
+      },
+      "mogenerator": {
+        "version": "1.32",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/mogenerator-1.32.catalina.bottle.tar.gz",
+              "sha256": "ee338f12698ed624689a19d0d65bf7a7b471b1e70319757923c1f8e7feb3e597"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/mogenerator-1.32.mojave.bottle.tar.gz",
+              "sha256": "634c78c86eef97f5d9feb531b3864469806b672e0ca5dff6cd00762b76f3084c"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/mogenerator-1.32.high_sierra.bottle.tar.gz",
+              "sha256": "5e477fee1c770d7b4b676c1627017727a925aafd81fd38c30037691a4b624ebf"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/mogenerator-1.32.sierra.bottle.tar.gz",
+              "sha256": "aadafc4a282f98739d296f105f24c94666c90417f92c05644fd965dbb42aa37d"
             }
           }
         }
@@ -255,6 +280,14 @@
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "11.3.1",
         "macOS": "10.14.6"
+      },
+      "catalina": {
+        "HOMEBREW_VERSION": "2.6.2",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "d914aab917710e94170526641d16414cb6a2083e",
+        "CLT": "12.0.32.21",
+        "Xcode": "12.2",
+        "macOS": "10.15.7"
       }
     }
   }

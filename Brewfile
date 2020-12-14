@@ -11,6 +11,7 @@ brew "mas" # Mac App Store installer
 
 brew "rbenv"
 brew "xcenv"
+brew "mogenerator"
 
 # Image related 
 #brew "imagemagick" (left commented because it has a lot of dependencies)
@@ -27,8 +28,10 @@ cask "google-chrome"
 cask "iterm2"
 cask "kaleidoscope"
 cask "omnidisksweeper"
+
 # paintcode commented for now as their SSL certificate seems to be expired so it fails the brew bundle install
 # cask "paintcode" 
+
 cask "paw"
 cask "postico"
 cask "sketch"
@@ -38,4 +41,6 @@ cask "sublime-text"
 cask "tower"
 #cask "xcode" wish list
 cask "zeplin"
-cask "zoom"
+
+#Zoom is currently managed by my work and cannot be installed via cask
+#cask "zoom" 

@@ -13,6 +13,7 @@ brew "rbenv"
 brew "xcenv"
 brew "mogenerator"
 brew "git-lfs"
+brew "cocoapods"
 
 # Image related 
 #brew "imagemagick" (left commented because it has a lot of dependencies)

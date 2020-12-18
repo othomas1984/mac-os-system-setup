@@ -24,6 +24,8 @@ Calls these in order
 1) Installs Brew
 2) Runs `brew bundle` to install everything in the [BrewFile](Brewfile)
 
+Note: For cocoapods to work through brew the rbenv shim at ~/.rbenv/shims/pod may need to be removed.
+
 ## Setup zsh
 1) Sets the default shell to zsh
 2) Install [Oh-My-ZSH](https://ohmyz.sh)

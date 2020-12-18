@@ -2,7 +2,7 @@
 eval "$(rbenv init -)"
 
 #Oh-My-ZSH
-export ZSH="/Users/owen.thomas/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh

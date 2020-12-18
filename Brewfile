@@ -12,6 +12,7 @@ brew "mas" # Mac App Store installer
 brew "rbenv"
 brew "xcenv"
 brew "mogenerator"
+brew "git-lfs"
 
 # Image related 
 #brew "imagemagick" (left commented because it has a lot of dependencies)

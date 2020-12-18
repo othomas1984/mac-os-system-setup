@@ -5,10 +5,10 @@
         "revision": "5628f2152de4896e0994fe0c3c1d0d7350ddf1ff"
       },
       "homebrew/cask": {
-        "revision": "fa8594296259fabe6d1ff3ac6a0fbaece8b2e249"
+        "revision": "fc0a7b2d476f957ddd5d5b762c1db5edd45eb9f2"
       },
       "homebrew/core": {
-        "revision": "d914aab917710e94170526641d16414cb6a2083e"
+        "revision": "e41b337f3ed47a70bc257bda51ed2f11469a7dcc"
       },
       "homebrew/services": {
         "revision": "492fa4ecaffcd735fea8aad6655ccf10228e6c0f"
@@ -131,6 +131,27 @@
             "sierra": {
               "url": "https://homebrew.bintray.com/bottles/mogenerator-1.32.sierra.bottle.tar.gz",
               "sha256": "aadafc4a282f98739d296f105f24c94666c90417f92c05644fd965dbb42aa37d"
+            }
+          }
+        }
+      },
+      "git-lfs": {
+        "version": "2.13.1",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/git-lfs-2.13.1.big_sur.bottle.tar.gz",
+              "sha256": "ebc56da970278c2f7fd44a73d855c8bdbbb27ecb3526b0e44e59124301300b0b"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/git-lfs-2.13.1.catalina.bottle.tar.gz",
+              "sha256": "069c9abf9aae2690f9f30ddea080d21aeb78e8cecbceee843d8eefe6e2248551"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/git-lfs-2.13.1.mojave.bottle.tar.gz",
+              "sha256": "a9d3e9326f96e0684eaed9fd9fd992dd9ad9f8e1ff01630d9c73ababe72b654f"
             }
           }
         }

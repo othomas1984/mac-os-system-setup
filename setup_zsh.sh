@@ -25,14 +25,21 @@ if [ -f ~/.zshrc ]; then
     cp .zshrc ~/.zshrc
     echo
     echo "Previous config saved to ~/.zshrc_pre-setup-zsh" >&2
-    source ~/.zshrc
+
+    # Cannot run source ~/.zshrc inside this script for some reason
+    # source ~/.zshrc
   fi
 else
   cp .zshrc ~/.zshrc
-  source ~/.zshrc
+    # Cannot run source ~/.zshrc inside this script for some reason
+  # source ~/.zshrc
 fi
 
 # Install iterm2 shell integration
 if [ ! -f ~/.iterm2_shell_integration.zsh ]; then
     curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 fi
+
+echo ""
+echo ""
+echo "ZSH setup complete: Run 'source ~/.zshrc' for changes to take effect immediately"

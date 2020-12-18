@@ -30,8 +30,8 @@ Calls these in order
 3) Installs [zsh-completions](https://github.com/zsh-users/zsh-autosuggestions)
 4) Copies [.zshrc](.zshrc) to ~/.zshrc.
    * Prompts if file already exists, and will save existing one to a new location if one chooses to continue.
-5) Runs `source ~/.zshrc` to activate the new config
-6) Installs [iTerm Shell Integrations](https://iterm2.com/documentation-shell-integration.html)
+5) Installs [iTerm Shell Integrations](https://iterm2.com/documentation-shell-integration.html)
+6) Instructs the user to manually run `source ~/.zshrc` to activate the new config immediately
 
 ## Setup Ruby
 1) Installs the version of Ruby specified in [.ruby-version](.ruby-version) so it is available system wide.

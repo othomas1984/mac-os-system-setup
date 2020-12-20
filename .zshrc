@@ -2,11 +2,10 @@
 eval "$(rbenv init -)"
 
 #Oh-My-ZSH
-export ZSH="~/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
-
 
 #Xcode Environment
 export PATH="$HOME/.xcenv/bin:$PATH"

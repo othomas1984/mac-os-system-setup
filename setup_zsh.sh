@@ -2,19 +2,19 @@
 
 # Set default shell to zsh if not already
 if [ ! -n $ZSH_VERSION ]; then 
-    echo "Setting the default shell to zsh. This may require your password"
+  echo "Setting the default shell to zsh. This may require your password"
 	chsh -s /bin/zsh
 fi
 
 # Install Oh-My-ZSH
 if [ ! -d ~/.oh-my-zsh ]; then
 	echo "Installing oh-my-zsh"
-	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	zsh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --unattended"
 fi
 
 # Install zsh-autosuggestions
 if [ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ]; then
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
 # Install .zshrc file
@@ -25,21 +25,14 @@ if [ -f ~/.zshrc ]; then
     cp .zshrc ~/.zshrc
     echo
     echo "Previous config saved to ~/.zshrc_pre-setup-zsh" >&2
-
-    # Cannot run source ~/.zshrc inside this script for some reason
-    # source ~/.zshrc
   fi
 else
   cp .zshrc ~/.zshrc
-    # Cannot run source ~/.zshrc inside this script for some reason
-  # source ~/.zshrc
 fi
 
 # Install iterm2 shell integration
 if [ ! -f ~/.iterm2_shell_integration.zsh ]; then
-    curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
+  curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 fi
 
-echo ""
-echo ""
-echo "ZSH setup complete: Run 'source ~/.zshrc' for changes to take effect immediately"
+zsh -l

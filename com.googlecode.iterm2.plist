@@ -718,6 +718,12 @@
 			<key>value</key>
 			<string>tinder module regenerate-project --no-open --project-name ProfileExample</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>bundle outdated --only-explicit</string>
+			<key>value</key>
+			<string>bundle outdated --only-explicit</string>
+		</dict>
 	</array>
 	<key>SoundForEsc</key>
 	<false/>

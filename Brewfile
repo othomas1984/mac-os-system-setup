@@ -3,6 +3,9 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 
+# tap for periphery dead code finder
+tap "peripheryapp/periphery"
+
 # set arguments for all 'brew cask install' commands
 cask_args appdir: "~/Applications"
 
@@ -16,7 +19,7 @@ brew "git-lfs"
 brew "cocoapods"
 
 # Image related 
-#brew "imagemagick" (left commented because it has a lot of dependencies)
+brew "imagemagick"
 brew "pngcrush"
 
 # iOS Hackery
@@ -31,8 +34,11 @@ cask "iterm2"
 cask "kaleidoscope"
 cask "omnidisksweeper"
 
+# Dead code finder
+cask "periphery"
+
 # paintcode commented for now as their SSL certificate seems to be expired so it fails the brew bundle install
-# cask "paintcode" 
+cask "paintcode" 
 
 cask "paw"
 cask "postico"

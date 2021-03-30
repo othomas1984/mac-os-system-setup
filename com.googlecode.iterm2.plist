@@ -671,8 +671,8 @@
 			<key>value</key>
 			<string>periphery scan \
   --workspace ~/github/tinder_ios/Projects/Tinder.xcworkspace/ \
-  --schemes "Tinder","Tinder CI" \
-  --targets "Tinder","Tinder Tests"</string>
+  --schemes Tinder,"Tinder CI" \
+  --targets Tinder,TinderTests</string>
 		</dict>
 		<dict>
 			<key>title</key>
@@ -720,7 +720,7 @@
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>bundle outdated --only-explicit</string>
+			<string>bundle outdated</string>
 			<key>value</key>
 			<string>bundle outdated --only-explicit</string>
 		</dict>

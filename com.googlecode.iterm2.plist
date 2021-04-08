@@ -724,6 +724,12 @@
 			<key>value</key>
 			<string>bundle outdated --only-explicit</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>Static Dependency Counts</string>
+			<key>value</key>
+			<string>grep -rIioh "staticdependency\.singleton\.\w*" . | sort | uniq -c | sort</string>
+		</dict>
 	</array>
 	<key>SoundForEsc</key>
 	<false/>

@@ -13,7 +13,8 @@ brew "cask"
 brew "mas" # Mac App Store installer
 
 brew "rbenv"
-brew "xcenv"
+brew "rbenv-aliases"
+#brew "xcenv"
 brew "mogenerator"
 brew "git-lfs"
 brew "cocoapods"

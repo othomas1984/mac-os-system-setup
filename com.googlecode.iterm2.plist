@@ -666,6 +666,8 @@
 	<key>Snippets</key>
 	<array>
 		<dict>
+			<key>guid</key>
+			<string>97C02E05-C86E-4217-8E3A-7B181C16845A</string>
 			<key>title</key>
 			<string>Periphery Scan</string>
 			<key>value</key>
@@ -673,62 +675,171 @@
   --workspace ~/github/tinder_ios/Projects/Tinder.xcworkspace/ \
   --schemes Tinder,"Tinder CI" \
   --targets Tinder,TinderTests</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>2EB008D5-599B-4090-AD9F-E440616EC96A</string>
 			<key>title</key>
 			<string>Unused code</string>
 			<key>value</key>
 			<string>ruby ~/developer/scripts/tinder/unused.rb</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>4D38DD3B-142C-4827-8BF1-5BFEAE6FC008</string>
 			<key>title</key>
 			<string>Crush Non-Tinder Snapshots</string>
 			<key>value</key>
 			<string>find ~/github/tinder_ios/ -not -path "*Tinder_Tests*" -iname "*png" -path "*Tinder Tests/Snapshot*" -exec pngcrush -ow {} {}.crush \;</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>B92C8D66-DB79-497E-9F64-47E99D03707D</string>
 			<key>title</key>
 			<string>Crush all PNGs</string>
 			<key>value</key>
 			<string>find ~/github/tinder_ios/ -iname "*png" -exec pngcrush -ow {} {}.crush \;</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>5CEB7E42-DBFB-4ED9-BE66-D8AFF5BCE404</string>
 			<key>title</key>
 			<string>Lines of code</string>
 			<key>value</key>
 			<string>cd ~/github/tinder_ios; \
 ../../developer/scripts/tinder/lines_of_code.sh</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>E8CBA7D6-82CE-4AEE-918E-785F3B4CE6AB</string>
 			<key>title</key>
 			<string>Extract Firebase Issues</string>
 			<key>value</key>
 			<string>cd ~/developer/scripts/tinder/; \
 ./extract_firebase_top_issues.swift</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>A577D62D-299A-46CD-B296-AE4B8AEC5753</string>
 			<key>title</key>
 			<string>env IN_TINDER_SCRIPT=TRUE</string>
 			<key>value</key>
 			<string>env IN_TINDER_SCRIPT=TRUE</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>B142A4B5-E6ED-4EFB-BF0C-EE9C59E4DF96</string>
 			<key>title</key>
 			<string>Regenerate Example</string>
 			<key>value</key>
 			<string>tinder module regenerate-project --no-open --project-name ProfileExample</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>C4340A91-DFFE-40E4-A929-03930D9EFC81</string>
 			<key>title</key>
 			<string>bundle outdated</string>
 			<key>value</key>
 			<string>bundle outdated --only-explicit</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>guid</key>
+			<string>5018C742-0C3B-4846-8081-00EE6A7E4445</string>
 			<key>title</key>
 			<string>Static Dependency Counts</string>
 			<key>value</key>
 			<string>grep -rIioh "staticdependency\.singleton\.\w*" . | sort | uniq -c | sort</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>FA9ED9E1-678E-49D1-A3BB-52F01D16BA70</string>
+			<key>title</key>
+			<string>Reset CoreAudio Daemon</string>
+			<key>value</key>
+			<string>sudo launchctl stop com.apple.audio.coreaudiod
+sudo launchctl start com.apple.audio.coreaudiod</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>C33E14D8-BFC6-49D9-AA39-AEEBFCAFEC3F</string>
+			<key>title</key>
+			<string>CodeCoverage</string>
+			<key>value</key>
+			<string>bazelisk run @Forge//:forge \
+    -- test-runner coverage --bazel-binary-path $(which bazelisk) \
+    --genhtml-target @lcov//:bin/genhtml \
+    --bazel-targets "ClientHealth_Unit_Tests" \
+    --metrics-dry-run true</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>BA8251DD-D04B-486A-BE2D-1CE9661DE186</string>
+			<key>title</key>
+			<string>ios-tooling Coverage command</string>
+			<key>value</key>
+			<string>make coverage targets="XcodeProjectAutomationToolLibraryTests"</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>38E5A1DF-D9D7-40CD-9C85-835771E6EE6A</string>
+			<key>title</key>
+			<string>ios-tooling Local Build Command</string>
+			<key>value</key>
+			<string>make smart_local_artifact target=//src/xc-cli/Sources:xc</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>97EF8C81-9ADC-4083-B149-B1D92C3CC11B</string>
+			<key>title</key>
+			<string>Run PreRun Checks locally</string>
+			<key>value</key>
+			<string>bazelisk run @xc-cli//:xc -- pre-run-verify \
+        --bazel-binary-path "$(command -v bazelisk)" \
+        --output-path "$PRE_RUN_OUTPUT" \
+        --start-git-revision "$start_revision" \
+        --end-git-revision "$final_revision" \
+        --fail-on-verification-error false \
+        --static-dependency-max-count 3304</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>5CB59370-758D-4A06-91CA-6D3F18083C2D</string>
+			<key>title</key>
+			<string>ios-tooling make project</string>
+			<key>value</key>
+			<string>make project targets="ModuleLibrary"</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>SoundForEsc</key>

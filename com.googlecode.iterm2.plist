@@ -841,6 +841,27 @@ sudo launchctl start com.apple.audio.coreaudiod</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>guid</key>
+			<string>D1A501E5-EF90-4750-9FFB-5862CF7A1125</string>
+			<key>title</key>
+			<string>Expand Xcode.xip</string>
+			<key>value</key>
+			<string>xip --expand Xcode.xip &gt; /dev/null</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>30D6EC96-158D-414B-8167-BA878C71AAF4</string>
+			<key>title</key>
+			<string>Symbolicate Crash</string>
+			<key>value</key>
+			<string>export DEVELOPER_DIR=/Applications/Xcode13.1.0.app/Contents/Developer; \
+    /Applications/Xcode13.1.0.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash Tinder.crash Tinder.app.dSYM &gt; TinderSymbolicated.crash</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>SoundForEsc</key>
 	<false/>
@@ -856,7 +877,6 @@ sudo launchctl start com.apple.audio.coreaudiod</string>
 	<array>
 		<string>Snippets</string>
 		<string>Command History</string>
-		<string>Recent Directories</string>
 		<string>Jobs</string>
 	</array>
 	<key>UseBorder</key>

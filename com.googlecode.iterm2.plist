@@ -672,9 +672,9 @@
 			<string>Periphery Scan</string>
 			<key>value</key>
 			<string>periphery scan \
-  --workspace ~/github/tinder_ios/Projects/Tinder.xcworkspace/ \
-  --schemes Tinder,"Tinder CI" \
-  --targets Tinder,TinderTests</string>
+  --project ~/github/tinder_ios/Projects/Tinder/Tinder-GeneratedProject.xcodeproj/ \
+  --schemes Tinder_Scheme,Tinder_AppTests_Scheme,Tinder_Shared_LibraryTests_Scheme \
+  --targets Tinder,Tinder_AppTests,Tinder_Shared_LibraryTests,TinderBase,TinderLib,TinderShared</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -859,6 +859,59 @@ sudo launchctl start com.apple.audio.coreaudiod</string>
 			<key>value</key>
 			<string>export DEVELOPER_DIR=/Applications/Xcode13.1.0.app/Contents/Developer; \
     /Applications/Xcode13.1.0.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash Tinder.crash Tinder.app.dSYM &gt; TinderSymbolicated.crash</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>A6CA35C8-095A-42C6-9C31-FCFB3296ECFC</string>
+			<key>title</key>
+			<string>SHA256</string>
+			<key>value</key>
+			<string>shasum -a 256 /path/to/file</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>547EBDCA-D23B-414E-AFEB-DDAAD60672DA</string>
+			<key>title</key>
+			<string>AppLaunchVerification</string>
+			<key>value</key>
+			<string>bazelisk run //Infra/AppLaunchVerification:AppLaunchVerifcation-GeneratedProject
+open Infra/AppLaunchVerification/AppLaunchVerifcation-GeneratedProject.xcodeproj</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>90480D51-68B2-411F-B7F7-73552F8AF3E0</string>
+			<key>title</key>
+			<string>Upload ios-tooling</string>
+			<key>value</key>
+			<string>make update_tinder_ios_tooling_adhoc</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>9F14A29B-F018-4069-ABAA-14E47F3A6C10</string>
+			<key>title</key>
+			<string>protoc generate descriptors</string>
+			<key>value</key>
+			<string>protoc path/to/service_api.proto --descriptor_set_out=service_api.desc</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>6449C9A8-72AA-41E5-97B4-79F8DA530A63</string>
+			<key>title</key>
+			<string>Bazel Cleanup</string>
+			<key>value</key>
+			<string>git clean -fdx
+bazelisk clean --expunge
+bazelisk shutdown</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>

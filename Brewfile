@@ -30,7 +30,12 @@ brew "pngcrush"
 
 # Cask Applications
 cask "charles"
+cask "discord"
 cask "google-chrome"
+
+# free graphics editor used by UMakers Makerspace for laser cutting (and more?)
+cask "inkscape"
+
 cask "iterm2"
 cask "kaleidoscope"
 cask "omnidisksweeper"

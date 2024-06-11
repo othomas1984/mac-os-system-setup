@@ -1,6 +1,6 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
+#tap "homebrew/cask"
+#tap "homebrew/core"
 tap "homebrew/services"
 
 # tap for periphery dead code finder
@@ -38,13 +38,14 @@ cask "inkscape"
 
 cask "iterm2"
 cask "kaleidoscope"
+cask "messenger"
 cask "omnidisksweeper"
 
 # Dead code finder
 cask "periphery"
 
 # paintcode commented for now as their SSL certificate seems to be expired so it fails the brew bundle install
-cask "paintcode" 
+cask "paintcode"
 
 cask "paw"
 cask "postico"
@@ -54,6 +55,7 @@ cask "spotify"
 cask "sublime-text"
 cask "tower"
 #cask "xcode" wish list
+cask "xcodes"
 cask "zeplin"
 
 #Zoom is currently managed by my work and cannot be installed via cask

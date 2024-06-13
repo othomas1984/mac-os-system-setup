@@ -49,6 +49,7 @@ cask "paintcode"
 
 cask "paw"
 cask "postico"
+cask "sf-symbols"
 cask "sketch"
 cask "slack"
 cask "spotify"

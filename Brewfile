@@ -30,6 +30,7 @@ brew "pngcrush"
 
 # Cask Applications
 cask "charles"
+cask "docker"
 cask "discord"
 cask "google-chrome"
 

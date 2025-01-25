@@ -18,6 +18,8 @@ brew "rbenv-aliases"
 brew "mogenerator"
 brew "git-lfs"
 brew "cocoapods"
+brew "xcbeautify"
+brew "xcodegen"
 
 # Image related 
 brew "imagemagick"
@@ -35,6 +37,9 @@ cask "docker"
 cask "discord"
 cask "google-chrome"
 
+# Maker stuff
+cask "arduino-ide"
+
 # free graphics editor used by UMakers Makerspace for laser cutting (and more?)
 cask "inkscape"
 
@@ -49,14 +54,16 @@ cask "periphery"
 # paintcode commented for now as their SSL certificate seems to be expired so it fails the brew bundle install
 cask "paintcode"
 
-cask "paw"
 cask "postico"
+cask "rapidapi"
 cask "sf-symbols"
 cask "sketch"
 cask "slack"
 cask "spotify"
+cask "steam"
 cask "sublime-text"
 cask "tower"
+cask "visual-studio-code"
 #cask "xcode" wish list
 cask "xcodes"
 cask "zeplin"

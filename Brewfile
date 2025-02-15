@@ -12,12 +12,17 @@ cask_args appdir: "~/Applications"
 brew "cask"
 brew "mas" # Mac App Store installer
 
+# Jupyter packages (for running interactive multi-cell notebooks)
+brew "jupyterlab"
+
 brew "rbenv"
 brew "rbenv-aliases"
 #brew "xcenv"
 brew "mogenerator"
 brew "git-lfs"
 brew "cocoapods"
+# Something to do with running conda (or mamba on macOS?) which is useful for python? Not exactly sure but OCP Cad Viewer in VSCode requires it
+brew "micromamba"
 brew "xcbeautify"
 brew "xcodegen"
 
